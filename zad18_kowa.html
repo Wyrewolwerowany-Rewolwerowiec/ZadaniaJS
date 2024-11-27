@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div style="color: navy; font-size:50px;">
+            <script lang="JavaScript">
+                var a=parseFloat(prompt("a=",""));
+                var b=parseFloat(prompt("b=",""));
+
+                function suma_kow(a,b) {
+                    return a + b;
+                }
+
+                function odjemowanie_kow(a,b) {
+                    return a - b;
+                }
+
+                function mnozenie_kow(a,b) {
+                    return a * b;
+                }
+
+                function od_kwadratu_kow(a,b) {
+                    return a ^ b;
+                }
+
+                function reszta_z_dzielenia_kow(a,b) {
+                    return a % b;
+                }
+
+                document.write("suma = "+suma_kow(a,b)+"<br>");
+                document.write("odejmowanie = "+odjemowanie_kow(a,b)+"<br>");
+                document.write("mnożenie = "+mnozenie_kow(a,b)+"<br>");
+                document.write("do kwadratu = "+od_kwadratu_kow(a,b)+"<br>");
+                document.write("reszta z dzielenia = "+reszta_z_dzielenia_kow(a,b)+"<br>");
+            </script>
+        </div>
+    </body>
+</html>

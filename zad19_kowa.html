@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            function pole_kowalski()
+            {
+                var a_kow = parseFloat(document.getElementById('dlugosc').value);
+                var b_kow = a_kow*a_kow;
+                document.getElementById("Nazwa").innerHTML="Pole kwadratu = "+b_kow.toFixed(2)+" cm^2";
+            }
+            function obwod_kowalski()
+            {
+                var a_kow = parseFloat(document.getElementById('dlugosc').value);
+                var b_kow = 4*a_kow;
+                document.getElementById("Nazwa").innerHTML="Obwód kwadratu = "+b_kow.toFixed(2)+" cm";
+            }
+        </script>
+        <h1>Wszystko o kwadracie</h1><br><br>
+        <p><b>Podaj długość boku: </b></p> <input type="text" id="dlugosc" value="Podaj długość">cm<br><br>
+        <input type="button" name="pole" value="Oblicz pole" onclick="pole_kowalski()"><br><br>
+        <input type="button" name="obwod" value="Oblicz obwód" onclick="obwod_kowalski()"><br><br>
+        <div style="color: red; font-size: 50px;" id="Nazwa"></div>
+    </body>
+</html>

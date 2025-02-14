@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript">
+		var ciezarowka = {
+			ladownosc: '3 Tony',
+			towar: 'Cegły',
+			cel: 'Sosnowiec',
+			wyswietl_kowalski: function() {
+				document.write(this.ladownosc + ' ' + this.towar + ' ' + this.cel)
+				}
+			}
+			ciezarowka.wyswietl_kowalski();
+			ciezarowka.kierowca = 'Pan Mieciu';
+			ciezarowka.pokaz_kowalski = function() {
+				alert('Kierowcą ciężarówki jest: ' + this.kierowca)
+			}
+			ciezarowka.pokaz_kowalski();
+		</script>
+	</head>
+	<body>
+		<br>
+		<h2>Programowanie obiektowe.</h2><br>
+		Obiekt to ciężarówka<br>
+		Pola:<br>
+			Ładowność<br>
+			Towar<br>
+			Cel<br>
+			Metoda: ciezarowka.wyswietl_kowalski<br>
+		Nowe pole to kierowca<br>
+		Nowa metoda to ciezarowka.pokaz_kowalski();<br>
+	</body>
+</html>

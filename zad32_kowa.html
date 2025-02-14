@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript">
+		// Początek konstruktora
+		function ciezarowka(ladownosc_k, towar_k, cel_k, kierowca_k) {
+			this.ladownosc = ladownosc_k;
+			this.towar = towar_k;
+			this.cel = cel_k;
+			this.kierowca = kierowca_k;
+		} // Koniec konstruktora
+		ciezarowka.prototype.wypisz_kowalski = function() {
+			alert(this.ladownosc + ' ' + this.towar + ' ' + this.cel + ' ' + this.kierowca);
+		};
+		
+		var pojazd1 = new ciezarowka("3 tony", "Cegły", "Sosnowiec", "Pan Mieciu"); // Nowy obiekt = pojazd1
+		var pojazd2 = new ciezarowka("1,5 tony", "Palety", "Radom", "Pan Waldek"); // Kolejny obiekt = pojazd2
+		pojazd1.wypisz_kowalski(); // Uruchomienie metody wypisz dotyczącej pojazdu pierwszego
+		pojazd2.wypisz_kowalski();
+		
+		document.write("Dostęp do właściwości" + "<br>");
+		// Poniżej dostęp do pól pojazdów
+		document.write("Pierwszy pojazd ma ładowność " + pojazd1.ladownosc + ", jego towar to " + pojazd1.towar + ", cel to " + pojazd1.cel + ", a kierowcą jest " + pojazd1.kierowca + "<br>");
+		document.write("Drugi pojazd ma ładowność " + pojazd2.ladownosc + ", jego towar to " + pojazd2.towar + ", cel to " + pojazd2.cel + ", a kierowcą jest " + pojazd2.kierowca);
+		</script>
+	</head>
+	<body>
+		<br>
+		<h2>Programowanie obiektowe.</h2><br>
+	</body>
+</html>

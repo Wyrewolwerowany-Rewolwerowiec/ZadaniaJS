@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div style="color:red;font-size:50px;">
+            <script lang="javascript">
+                var x = prompt("Podaj liczbę X =","");
+                var a_dana_kow = parseFloat(x);
+
+                document.write("Wczytana liczba X = " + a_dana_kow + "<br>");
+
+                if(a_dana_kow>0) {
+                    document.write("Wczytana liczba jest większa od 0" + "<br>");
+                }
+                if(a_dana_kow<0) {
+                    document.write("Wczytana liczba jest mniejsza od 0" + "<br>");
+                }
+                if(a_dana_kow==0) {
+                    alert("Wczytano liczbę równą 0!!!");
+                    document.write("Wczytano liczbe równą 0!!!<br>");
+                }
+            </script>
+        </div>
+    </body>
+</html>

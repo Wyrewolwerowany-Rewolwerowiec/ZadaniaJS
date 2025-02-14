@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div style="color:greenyellow;font-size:50px;font-family: 'Comic Sans MS';">
+            <script language="javascript">
+                var x = prompt("Podaj liczbę X","");
+                var a_kow = parseFloat(x);
+
+                document.write("Wczytano liczbe " + a_kow + " <br>");
+
+                if(a_kow % 2 == 0) {
+                    document.write("<font color=red size=3>Liczba jest parzysta</font>");
+                }
+                if(a_kow % 2 == 1) {
+                    document.write("<font color=silver size=5>Liczba jest nieparzysta</font>");
+                }
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Zadanie JS</title>
+		<meta charset="utf-8">
+		<style>
+			h1 { text-transform: uppercase; }
+		</style>
+		<script>
+			function suma_kow()
+			{
+				var a = document.getElementById("a").value;
+				var b = document.getElementById("b").value;
+				if (a == "" || b == "")
+				{
+					document.getElementById("wynik").innerHTML = "Proszę wpisać obie liczby.";
+				}
+				else
+				{
+					a = parseFloat(a);
+					b = parseFloat(b);
+					var suma_kow = a + b;
+					document.getElementById("wynik").innerHTML = "Wynik wynosi: " + suma_kow;
+				}
+			}
+			function roznica_kow()
+			{
+				var a = document.getElementById("a").value;
+				var b = document.getElementById("b").value;
+				if (a == "" || b == "")
+				{
+					document.getElementById("wynik").innerHTML = "Proszę wpisać obie liczby.";
+				}
+				else
+				{
+					a = parseFloat(a);
+					b = parseFloat(b);
+					var roznica_kow = a - b;
+					document.getElementById("wynik").innerHTML = "Wynik wynosi: " + roznica_kow;
+				}
+			}
+			function iloczyn_kow()
+			{
+				var a = document.getElementById("a").value;
+				var b = document.getElementById("b").value;
+				if (a == "" || b == "")
+				{
+					document.getElementById("wynik").innerHTML = "Proszę wpisać obie liczby.";
+				}
+				else
+				{
+					a = parseFloat(a);
+					b = parseFloat(b);
+					var iloczyn_kow = a * b;
+					document.getElementById("wynik").innerHTML = "Wynik wynosi: " + iloczyn_kow;
+				}
+			}
+			function iloraz_kow()
+			{
+				var a = document.getElementById("a").value;
+				var b = document.getElementById("b").value;
+				if (a == "" || b == "")
+				{
+					document.getElementById("wynik").innerHTML = "Proszę wpisać obie liczby.";
+				}
+				else
+				{
+					a = parseFloat(a);
+					b = parseFloat(b);
+					if (b == 0)
+					{
+						document.getElementById("wynik").innerHTML = "Nie wolno dzielić przez zero!!!";
+					}
+					else
+					{
+						var iloraz_kow = a / b;
+						document.getElementById("wynik").innerHTML = "Wynik wynosi: " + iloraz_kow;
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Proste działania</h1>
+		<label for="a">Podaj pierwszą liczbę:</label> <input type="number" id="a">
+		<br><br>
+		<label for="b">Podaj druga liczbę:</label> <input type="number" id="b">
+		<br><br>
+		<input type="button" value="Dodawanie (+)" onclick="suma_kow()">
+		<input type="button" value="Odejmowanie (-)" onclick="roznica_kow()">
+		<input type="button" value="Mnożenie (*)" onclick="iloczyn_kow()">
+		<input type="button" value="Dzielenie (/)" onclick="iloraz_kow()">
+		<div id="wynik" style="margin-top: 20px;"></div>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script>
+			function fun_kow() {
+				var x_kow = prompt("Podaj kolor", "");
+				if(x_kow == 1 || x_kow.toLowerCase() == "czerwony") {
+					document.write('<h1 style="color:red;">Wczytałeś kolor CZERWONY</h1><br>');
+				}
+				else if(x_kow == 2 || x_kow.toLowerCase() == "niebieski") {
+					document.write('<h6 style="color:blue;">Wczytałeś kolor NIEBIESKI</h6><br>');
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1><font color=green>MENU</font></h1>
+		<br>
+		<h3><font color=red>1 - Czerwony</font></h3>
+		<h3><font color=blue>2 - Niebieski</font></h3>
+		<br>
+		<input type="button" name="kowalski" value="Oblicz" onclick="fun_kow()">
+	</body>
+</html>

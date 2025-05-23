@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>Sprawdzenie danych Kowalski</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div style="color: red; font-size: 50px;">
+        <script lang="JavaScript">
+            do {
+                var liczba_kow = prompt("Wysokość=","");
+                var h_kow = parseFloat(liczba_kow);
+            }
+
+            while(h_kow<=0);
+            do {
+                var liczba_kow = prompt("Podstawę=","");
+                var a_kow = parseFloat(liczba_kow);
+            }
+            while(!(a_kow>0));
+            var pole_kow = a_kow * h_kow / 2;
+            document.write("Pole = "+pole_kow.toFixed(2)+" cm^2" + "<br>");
+        </script>
+    </div>
+</body>
